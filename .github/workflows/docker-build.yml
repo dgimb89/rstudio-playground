@@ -42,4 +42,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            R_VERSION=4.3.3 
+            R_VERSION=4.4
