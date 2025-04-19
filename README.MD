@@ -1,3 +1,5 @@
+[![Docker Build and Push](https://github.com/dgimb89/rstudio-playground/actions/workflows/docker-build.yml/badge.svg)](https://github.com/dgimb89/rstudio-playground/actions/workflows/docker-build.yml)
+
 # RStudio Playground
 
 This project provides a template RStudio development environment using Docker. It's designed to help you get started with R development quickly.
