@@ -16,3 +16,4 @@ services:
       - ./.rstudio_config:/home/rstudio/.config/rstudio
       - ./workspace:/home/rstudio/workspace
       - ./data:/home/rstudio/data
+      - ./exports:/home/rstudio/exports
