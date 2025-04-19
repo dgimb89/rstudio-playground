@@ -1,11 +1,11 @@
 # R packages to install
 packages <- c(
-  'rmarkdown',
-  'tidyverse',
-  'tidymodels',
-  'workflowr',
   'BiocManager',
-  'quarto'
+  'quarto',
+  'rmarkdown',
+  'tidymodels',
+  'tidyverse',
+  'workflowr'
 )
 
 # Install core packages
