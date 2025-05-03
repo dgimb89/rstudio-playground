@@ -2,9 +2,11 @@ cmake
 git
 libbz2-dev
 libcurl4-openssl-dev
+libfribidi-dev
 libgit2-dev
 libglpk40
 libgsl-dev
+libharfbuzz-dev
 libhdf5-dev
 liblzma-dev
 libmagick++-dev
