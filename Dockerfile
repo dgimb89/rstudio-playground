@@ -12,8 +12,12 @@ RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrad
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     truncate -s 0 /var/log/*log
 
-# Copy and run the packages installation script
-COPY packages.R /tmp/packages.R
-RUN Rscript /tmp/packages.R
+# Install base packages
+COPY base-packages.R /tmp/base-packages.R
+RUN Rscript /tmp/base-packages.R
+
+# Install user packages
+COPY user-packages.R /tmp/user-packages.R
+RUN Rscript /tmp/user-packages.R
 
 WORKDIR /home/rstudio
