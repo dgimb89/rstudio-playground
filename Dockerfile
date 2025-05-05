@@ -1,8 +1,6 @@
 ARG R_VERSION
 FROM rocker/rstudio:${R_VERSION}
 
-ARG bioc_ver=3.20
-
 COPY Aptfile /tmp/Aptfile
 RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrade && \
     DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
