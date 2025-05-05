@@ -1,6 +1,8 @@
 # R packages to install
 packages <- c(
   'BiocManager',
+  'countrycode',
+  'ggflags',
   'quarto',
   'rmarkdown',
   'tidymodels',
